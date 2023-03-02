@@ -1,0 +1,60 @@
+      ******************************************************************
+      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
+      ******************************************************************
+      *
+      *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
+      *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ
+      *          VERSION:    1
+      *
+      *    WARNING
+      *          CODE WAS NOT COMPILED AND RUN
+      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT
+      *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
+      *
+      *    PURPOSE
+      *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
+      *
+      *    TODO
+      *          VER-2 IMPL. SCREENS
+      *          VER-3 IMPL. START/STOP, ELAPSED TIME
+      *          VER-4 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
+      *
+      ******************************************************************
+      *
+      *    PROJECT CONTAINS:
+      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS
+      *          MAIN PGM          OPERQUIZ.CBL   INIT
+      *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
+      *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
+      *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
+      *
+      ******************************************************************
+           05 LS-Q.
+            10 LS-Q1 PIC Z(50) VALUE 
+            'WHAT PU Z/OS CHECKS TO RUN?'.
+            10 LS-Q2 PIC Z(50) VALUE 
+            'JES VERSION FOR PARALLEL SYSPLEX IS?'.
+            10 LS-Q3 PIC Z(50) VALUE 
+            'Z/VM CAN NOT IPL:'.
+            10 LS-Q4 PIC Z(50) VALUE 
+            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.
+            10 LS-Q5 PIC Z(50) VALUE 
+            'WHAT IS BEST FOR SEQUENTIAL ACCESS?'.
+           05 LS-A.
+            10 LS-A01 PIC Z(40) VALUE 
+            'A) CP     B) IFL   C) ZIP   D) ZAAP'.
+            10 LS-A02 PIC Z(40) VALUE 
+            'A) 1      B) 2     C) 3     D) 4'.
+            10 LS-A03 PIC Z(40) VALUE 
+            'A) CP     B) CMS   C) Z/VM  D) Z/OS'.
+            10 LS-A04 PIC Z(40) VALUE 
+            'A) EDIT   B) ISPF  C) USS   D) XEDIT'.
+            10 LS-A05 PIC Z(40) VALUE 
+            'A) KSDS   B) LDS   C) RRDS  D) PDS/E'.
+           05 LS-C.
+            10 LS-C01 PIC Z VALUE 'A'.
+            10 LS-C02 PIC Z VALUE 'C'.
+            10 LS-C03 PIC Z VALUE 'A'.
+            10 LS-C04 PIC Z VALUE 'D'.
+            10 LS-C05 PIC Z VALUE 'B'.
+         
