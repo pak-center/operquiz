@@ -15,9 +15,8 @@
       *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
       *
       *    TODO
-      *          VER-2 IMPL. SCREENS
-      *          VER-3 IMPL. START/STOP, ELAPSED TIME
-      *          VER-4 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
+      *          VER-2 IMPL. START/STOP, ELAPSED TIME
+      *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
       *
@@ -27,6 +26,6 @@
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
       *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
       *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-      *				     CPBQAC02	  V2 OF Q&A REC FORMAT
+      *				          CPBQAC02	     V2 OF Q&A REC FORMAT
       *
       ******************************************************************
