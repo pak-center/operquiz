@@ -1,6 +1,3 @@
-# operquiz
-OPERATOR CONSOLE &amp; SCREEN QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
-
       ******************************************************************
       *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
       ******************************************************************
@@ -30,6 +27,37 @@ OPERATOR CONSOLE &amp; SCREEN QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
       *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
       *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-	*                            CPBQAC02       V2 OF Q&A REC FORMAT
+      *							   CPBQAC02		  V2 OF Q&A REC FORMAT
       *
       ******************************************************************
+        04 WS-RECORD-O2.
+            05 LS-Q1 PIC Z(50) VALUE
+            'WHAT PU Z/OS CHECKS TO RUN?'.
+		    05 LS-A01 PIC Z(40) VALUE
+            'A) CP     B) IFL   C) ZIP   D) ZAAP'.
+		    05 LS-C01 PIC Z VALUE 'A'.
+      *
+            05 LS-Q2 PIC Z(50) VALUE
+            'JES VERSION FOR PARALLEL SYSPLEX IS?'.
+            05 LS-A02 PIC Z(40) VALUE
+            'A) 1      B) 2     C) 3     D) 4'.
+		    05 LS-C02 PIC Z VALUE 'C'.
+      *			
+		    05 LS-Q3 PIC Z(50) VALUE
+            'Z/VM CAN NOT IPL:'.
+            05 LS-A03 PIC Z(40) VALUE
+            'A) CP     B) CMS   C) Z/VM  D) Z/OS'.
+		    05 LS-C03 PIC Z VALUE 'A'.
+      *			
+		    05 LS-Q4 PIC Z(50) VALUE 
+            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.
+            05 LS-A04 PIC Z(40) VALUE 
+            'A) EDIT   B) ISPF  C) USS   D) XEDIT'.
+            05 LS-C04 PIC Z VALUE 'D'.
+      *			
+            05 LS-Q5 PIC Z(50) VALUE 
+            'WHAT IS BEST FOR SEQUENTIAL ACCESS?'.
+            05 LS-A05 PIC Z(40) VALUE 
+            'A) KSDS   B) LDS   C) RRDS  D) PDS/E'.
+            05 LS-C05 PIC Z VALUE 'B'.
+      *

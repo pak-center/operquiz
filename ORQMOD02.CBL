@@ -29,12 +29,13 @@
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
       *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
       *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
+      *							   CPBQAC02		  V2 OF Q&A REC FORMAT
       *
       ******************************************************************
        DATA DIVISION.
        WORKING-STORAGE SECTION.
        01 WS-QA-TABLE.
-        04 WS-RECORD01 OCCURS 5 TIMES INDEXED BY I.
+        04 WS-RECORD02 OCCURS 5 TIMES INDEXED BY I.
            05 WS-Q           PIC   Z(50).
            05 WS-A           PIC   Z(40).
            05 WS-C           PIC   A.
@@ -45,7 +46,7 @@
            05 LS-RES2        COMP-2         VALUE 0.
            05 LS-Q-AMOUNT    PIC   999      VALUE 5.
        01 LS-QAC-BOOK.
-           COPY CPBQAC01.
+           COPY CPBQAC02. *> PREV V1 CPBQAC01
        LINKAGE SECTION.
        01 WS-HLINE           PIC   Z(80).
        PROCEDURE DIVISION USING WS-HLINE.
@@ -54,7 +55,8 @@
            MOVE FUNCTION UPPER-CASE(LS-INPUT) TO LS-INPUT
            IF LS-INPUT = 'Y' THEN
             SET I TO 1
-            MOVE LS-QAC-BOOK TO WS-QA-TABLE *>NEEDS CHECK AFTER COMPILE
+            MOVE LS-QAC-BOOK TO WS-RECORD02
+              *>WS-QA-TABLE *>NEEDS CHECK AFTER COMPILE
       * LOOP FOR 5 QUESTIONS IN LS-Q-AMOUNT VARIABLE
             PERFORM VARYING I
              FROM 1 BY 1
