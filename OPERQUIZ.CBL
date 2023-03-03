@@ -17,9 +17,8 @@
       *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
       *
       *    TODO
-      *          VER-2 IMPL. SCREENS
-      *          VER-3 IMPL. START/STOP, ELAPSED TIME
-      *          VER-4 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
+      *          VER-2 IMPL. START/STOP, ELAPSED TIME
+      *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
       *
@@ -58,8 +57,8 @@
               WHEN 'O'
                  PERFORM PROC-OPER
                  *>MOVE 0 TO RETURN-CODE
-              WHEN 'S'
-                 PERFORM PROC-SCREEN
+              WHEN 'B'
+                 PERFORM PROC-BATCH
               WHEN OTHER
                  DISPLAY 'WARNING: JCL PARM NAME IS INVALID'
                  MOVE 1 TO RETURN-CODE
@@ -70,7 +69,7 @@
            CALL 'ORQMOD02' USING WS-HLINE *> QUIZ CODE FOR CONSOLE     
            MOVE 0 TO RETURN-CODE
            EXIT.
-       PROC-SCREEN.
+       PROC-BATCH.
            DISPLAY 'MSGINFO: SCREEN FEATURE NOT IMPLEMENTED YET'
            MOVE 0 TO RETURN-CODE
            EXIT.
