@@ -10,15 +10,6 @@
       *          CODE WAS NOT COMPILED AND RUN
       *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT
       *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
-      *
-      *    PURPOSE
-      *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
-      *
-      *    TODO
-      *          VER-2 IMPL. SCREENS
-      *          VER-3 IMPL. START/STOP, ELAPSED TIME
-      *          VER-4 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
-      *
       ******************************************************************
       *
       *    PROJECT CONTAINS:
