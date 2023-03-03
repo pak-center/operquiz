@@ -30,6 +30,6 @@ OPERATOR CONSOLE &amp; SCREEN QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
       *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
       *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-	*                            CPBQAC02       V2 OF Q&A REC FORMAT
+      *                            CPBQAC02       V2 OF Q&A REC FORMAT
       *
       ******************************************************************
