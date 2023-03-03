@@ -1,8 +1,8 @@
 # operquiz
-OPERATOR CONSOLE &amp; SCREEN QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
+OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
 
       ******************************************************************
-      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
+      *    OPERATOR CONSOLE QUIZ ABOUT MAINFRAME
       ******************************************************************
       *
       *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
@@ -18,9 +18,8 @@ OPERATOR CONSOLE &amp; SCREEN QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
       *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
       *
       *    TODO
-      *          VER-2 IMPL. SCREENS
-      *          VER-3 IMPL. START/STOP, ELAPSED TIME
-      *          VER-4 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
+      *          VER-2 IMPL. START/STOP, ELAPSED TIME
+      *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
       *
