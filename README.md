@@ -32,3 +32,5 @@ OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
       *                            CPBQAC02       V2 OF Q&A REC FORMAT
       *
       ******************************************************************
+
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
