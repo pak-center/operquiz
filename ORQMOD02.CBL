@@ -27,8 +27,8 @@
        WORKING-STORAGE SECTION.
        01 WS-QA-TABLE.
         04 WS-RECORD02 OCCURS 5 TIMES INDEXED BY I.
-           05 WS-Q           PIC   Z(50).
-           05 WS-A           PIC   Z(40).
+           05 WS-Q           PIC   X(50).
+           05 WS-A           PIC   X(40).
            05 WS-C           PIC   A.
        LOCAL-STORAGE SECTION.
        01 LS-ALL.
@@ -39,7 +39,7 @@
        01 LS-QAC-BOOK.
            COPY CPBQAC02. *> PREV V1 CPBQAC01
        LINKAGE SECTION.
-       01 WS-HLINE           PIC   Z(80).
+       01 WS-HLINE           PIC   X(80).
        PROCEDURE DIVISION USING WS-HLINE.
            ACCEPT LS-INPUT
       D    DISPLAY 'DEBUG: LS-INPUT=', LS-INPUT
