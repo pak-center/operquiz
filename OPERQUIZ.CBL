@@ -77,5 +77,8 @@
            MOVE 0 TO RETURN-CODE
            EXIT.
        PROC-BATCH-C.
-      D    DISPLAY 'PRINT CORRECT ANSWERS WHEN PARM=(C)'  
+       *> ARG CHECK FOR C,ABCDA
+      D    DISPLAY 'READ ANSWERS FROM PARM=(C,*) , WHERE * IS A-D',
+      D    'E.G. (C,ABCDA) FOR 5 QUESTIONS'   
+      D    DISPLAY 'PRINT SUMMARY'  
            EXIT.
