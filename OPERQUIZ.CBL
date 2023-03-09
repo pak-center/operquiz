@@ -58,7 +58,9 @@
                  PERFORM PROC-OPER
                  *>MOVE 0 TO RETURN-CODE
               WHEN 'B'
-                 PERFORM PROC-BATCH
+                 PERFORM PROC-BATCH-Q
+              WHEN 'C'
+                 PERFORM PROC-BATCH-C
               WHEN OTHER
                  DISPLAY 'WARNING: JCL PARM NAME IS INVALID'
                  MOVE 1 TO RETURN-CODE
@@ -69,7 +71,11 @@
            CALL 'ORQMOD02' USING WS-HLINE *> QUIZ CODE FOR CONSOLE     
            MOVE 0 TO RETURN-CODE
            EXIT.
-       PROC-BATCH.
-           DISPLAY 'MSGINFO: SCREEN FEATURE NOT IMPLEMENTED YET'
+       PROC-BATCH-Q.
+           DISPLAY 'MSGINFO: FEATURE NOT IMPLEMENTED YET'
+      D    DISPLAY 'PRINT ALL QUESTIONS AND ABCD ANSERS'
            MOVE 0 TO RETURN-CODE
+           EXIT.
+       PROC-BATCH-C.
+      D    DISPLAY 'PRINT CORRECT ANSWERS WHEN PARM=(C)'  
            EXIT.
