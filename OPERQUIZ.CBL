@@ -6,7 +6,7 @@
       *
       *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
       *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ
-      *          VERSION:    1
+      *          VERSION:    2
       *
       *    WARNING
       *          CODE WAS NOT COMPILED AND RUN
@@ -14,16 +14,26 @@
       *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
       *
       *    PURPOSE
-      *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
+      *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL 
+      *
+      *    INFO
+      *          PGM TAKES PARMS FROM JCL TO SELECT OPERATION MODE
+      *          OPERATOR (C)ONSOLE OR (B)ATCH
+      *          FOR BATCH WRITE JCL PARM TO COMMAND PGM FLOW
+      *          BATCH = PRINTS 5 QUESTIONS AND ABCD ANSWERS PROPOSAL
+      *          C,ABCDA = CHECKS CORRECT ANSWERS AND PRINTS SUMMARY
+      *          ('ABCDA' IS AN EXAMPLE LIKE 'BBBCC')
+      *          
+      *          VER-2 IMPL. START/STOP, ELAPSED TIME
       *
       *    TODO
-      *          VER-2 IMPL. START/STOP, ELAPSED TIME
+      *          (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
       *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
       *
       *    PROJECT CONTAINS:
-      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS
+      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARMS
       *          MAIN PGM          OPERQUIZ.CBL   INIT
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
       *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
@@ -36,16 +46,17 @@
        01 WS-OPER-VIEW.
            05 WS-HLINE    PIC X(80) VALUES ALL '*'.
       ******************************************************************
-       01 WS-DATE-DATA OCCURS 2 TIMES. *> 1 FOR START, 2 FOR STOP
+       01 WS-DATE-DATA OCCURS 2 TIMES INDEXED BY INDX-T. 
+                          *> 1 AT START, 2 AT STOP
         05  WS-DATE.
-         10  WS-YEAR                  PIC 9(04).
-         10  WS-MONTH                 PIC 9(02).
-         10  WS-DAY                   PIC 9(02).
+         10  WS-Y                           PIC 9(04).
+         10  WS-M                           PIC 9(02).
+         10  WS-D                           PIC 9(02).
         05  WS-TIME.
-         10  WS-HOURS                 PIC 9(02).
-         10  WS-MINUTE                PIC 9(02).
-         10  WS-SECOND                PIC 9(02).
-         10  WS-MILLISECONDS          PIC 9(02).
+         10  WS-H                           PIC 9(02).
+         10  WS-MN                          PIC 9(02).
+         10  WS-S                           PIC 9(02).
+         10  WS-MS                          PIC 9(02).
       *******************       
       * LOCAL-STORAGE SECTION.
        LINKAGE SECTION.
@@ -103,12 +114,31 @@
       D    DISPLAY 'PRINT SUMMARY'  
            EXIT. 
        PROC-ELAPSED-TIME. 
-           MOVE FUNCTION CURRENT-DATE TO WS-DATE-DATA(2) 
-      D    DISPLAY 'START TIME/DATE' 
+           MOVE FUNCTION CURRENT-DATE TO WS-DATE-DATA(2)  
+           SET INDX-T TO 1 
+           PERFORM 2 TIMES 
+           DISPLAY WS-HLINE 
+           IF INDX-T IS EQUAL 1 
+            DISPLAY '* PGM STARTED AT: ' 
+            ELSE 
+            DISPLAY '* PGM ENDED AT:   '  
+           END-IF 
 
-      D    DISPLAY 'STOP TIME/DATE' 
-
-      D    DISPLAY 'ELAPSED TIME' 
+           PERFORM PROC-TIME-DISPL 
+           SET INDX-T UP BY 1
+           END-PERFORM
+         
+           DISPLAY WS-HLINE
+           DISPLAY '* PGM ELAPSED TIME: ' 
            SUBTRACT WS-DATE-DATA(2) FROM WS-DATE-DATA(1) 
-
+           SET INDX-T TO 1
+           PERFORM PROC-TIME-DISPL 
+           DISPLAY WS-HLINE 
+           DISPLAY WS-HLINE 
+           EXIT. 
+       PROC-TIME-DISPL. 
+           DISPLAY 'DATE: ',
+           WS-Y(INDX-T),'/',WS-M(INDX-T),'/',WS-D(INDX-T),' ',
+           'TIME: ',WS-H(INDX-T),':',WS-MN(INDX-T),
+           ':',WS-S(INDX-T),':',WS-MS(INDX-T),'MS'  
            EXIT. 
