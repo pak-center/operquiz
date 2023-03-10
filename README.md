@@ -13,12 +13,12 @@ Project is created with:
 * JCL
 ## Features
       ******************************************************************
-      *    OPERATOR CONSOLE QUIZ ABOUT MAINFRAME
+      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
       ******************************************************************
       *
       *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
       *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ
-      *          VERSION:    1
+      *          VERSION:    2
       *
       *    WARNING
       *          CODE WAS NOT COMPILED AND RUN
@@ -26,16 +26,26 @@ Project is created with:
       *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
       *
       *    PURPOSE
-      *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL
+      *          TRAINING AND COGNITIVE OBJECTIVES OF COBOL 
+      *
+      *    INFO
+      *          PGM TAKES PARMS FROM JCL TO SELECT OPERATION MODE
+      *          OPERATOR (C)ONSOLE OR (B)ATCH
+      *          FOR BATCH WRITE JCL PARM TO COMMAND PGM FLOW
+      *          BATCH = PRINTS 5 QUESTIONS AND ABCD ANSWERS PROPOSAL
+      *          C,ABCDA = CHECKS CORRECT ANSWERS AND PRINTS SUMMARY
+      *          ('ABCDA' IS AN EXAMPLE LIKE 'BBBCC')
+      *          
+      *          VER-2 IMPL. START/STOP, ELAPSED TIME
       *
       *    TODO
-      *          VER-2 IMPL. START/STOP, ELAPSED TIME
+      *          (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
       *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
       *
       *    PROJECT CONTAINS:
-      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS
+      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARMS
       *          MAIN PGM          OPERQUIZ.CBL   INIT
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
       *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
@@ -43,8 +53,9 @@ Project is created with:
       *                            CPBQAC02       V2 OF Q&A REC FORMAT
       *
       ******************************************************************
+     
 ## TODO
-* VER-2 IMPLEMENT START/STOP AND ELAPSED TIME
+* (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
 * VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
 ## License
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
