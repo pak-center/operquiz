@@ -2,6 +2,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Installation](#installation)
 * [Features](#features)
 * [TOO](#todo)
 * [Run the Project](#run-the-project)
@@ -48,6 +49,8 @@ OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
 Project is created with:
 * COBOL
 * JCL
+## Installation
+* Available z/OS COBOL compiler PTF
 ## Features
 | Feature  | Status |
 | ---      | ---       |
