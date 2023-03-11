@@ -1,9 +1,10 @@
-# operquiz
+# OPERQUIZ
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Features](#features)
 * [TOO](#todo)
+* [Run the Project](#run-the-project)
 * [License](#license)
 ## General info
 OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
@@ -57,5 +58,14 @@ Project is created with:
 ## TODO
 * (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
 * VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
+## Run the Project
+* First we need to compile it using default JCL for Enterprise COBOL
+* Then we check compile results and correct warnings or errors if exists or just send them here to the author (to fix the code)
+* Edit 'OPERQUIZ.JCL' and change it for our need
+* Options available to SET proper MODE
+```jcl
+/TEST HERE TODO
+```
+> SUBMIT 'USERID.OPERQUIZ.JCL'
 ## License
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
