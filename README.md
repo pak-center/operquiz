@@ -1,4 +1,4 @@
-# OPERQUIZ
+# operquiz
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
@@ -8,11 +8,7 @@
 * [License](#license)
 ## General info
 OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
-## Technologies
-Project is created with:
-* COBOL
-* JCL
-## Features
+
       ******************************************************************
       *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
       ******************************************************************
@@ -36,12 +32,6 @@ Project is created with:
       *          BATCH = PRINTS 5 QUESTIONS AND ABCD ANSWERS PROPOSAL
       *          C,ABCDA = CHECKS CORRECT ANSWERS AND PRINTS SUMMARY
       *          ('ABCDA' IS AN EXAMPLE LIKE 'BBBCC')
-      *          
-      *          VER-2 IMPL. START/STOP, ELAPSED TIME
-      *
-      *    TODO
-      *          (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
-      *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
       *
@@ -54,7 +44,20 @@ Project is created with:
       *                            CPBQAC02       V2 OF Q&A REC FORMAT
       *
       ******************************************************************
-     
+## Technologies
+Project is created with:
+* COBOL
+* JCL
+## Features
+| Feature  | Status |
+| ---      | ---       |
+| START/STOP  TIME | Completed       |
+| ELAPSED TIME    | Completed        |
+| Console Operator play | Completed |
+| 5 questions in quiz | Completed |
+| Percentage SUMMARY | Completed |
+| Batch play | In progress |
+| PSEUDO-RANDOM ORDER OF QUESTIONS | In Progress |     
 ## TODO
 * (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
 * VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
