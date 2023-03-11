@@ -62,9 +62,19 @@ Project is created with:
 * First we need to compile it using default JCL for Enterprise COBOL
 * Then we check compile results and correct warnings or errors if exists or just send them here to the author (to fix the code)
 * Edit 'OPERQUIZ.JCL' and change it for our need
-* Options available to SET proper MODE
+* Options available to SET the proper MODE
 ```jcl
-/TEST HERE TODO
+//*             PLEASE CHOOSE ONLY ONE PARAMETER
+//* OPERATOR        FOR CONSOLE OPERATOR INTERACTION
+//* (BELOW NOT IMPLEMENTED YET)
+//* BATCH           BATCH TO PRINT QUESTIONS AND ABCD ANSWERS PROPOSAL
+//* C,ABCDA         TO PRINT CORRECT ANSWERS SUMMARY
+//*   -----  , WHERE ABCDA IS USER ANSWER FOR 5 QUESTIONS
+//*
+//          SET USERP1=OPERATOR
+//**        SET USERP1=BATCH
+//**        SET USERP1=C,-----
+//STEP1 EXEC PGM=OPERQUIZ,PARM='&USERP1'
 ```
 > SUBMIT 'USERID.OPERQUIZ.JCL'
 ## License
