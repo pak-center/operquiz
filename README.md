@@ -1,6 +1,7 @@
 # operquiz
 ![GitHub top language](https://img.shields.io/github/languages/top/pak-center/operquiz?style=plastic)
 ![Lines of code](https://img.shields.io/tokei/lines/github/pak-center/operquiz?label=total%20lines%20of%20code&style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/pak-center/operquiz?style=plastic)
 ![GitHub](https://img.shields.io/github/license/pak-center/operquiz?style=plastic)
 ## Table of contents
 * [General info](#general-info)
