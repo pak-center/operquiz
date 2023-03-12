@@ -12,7 +12,7 @@
 * [License](#license)
 ## General info
 OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
-
+```cobol
       ******************************************************************
       *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
       ******************************************************************
@@ -48,6 +48,7 @@ OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
       *                            CPBQAC02       V2 OF Q&A REC FORMAT
       *
       ******************************************************************
+```
 ## Technologies
 Project is created with:
 * COBOL
