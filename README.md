@@ -59,12 +59,12 @@ Project is created with:
 ## Features
 | Feature  | % Progress | Status |
 | ---      | ---       | --- |
-| START/STOP  TIME | ########## | Completed       |
-| ELAPSED TIME    | ########## | Completed        |
+| START/STOP  TIME | ########## | Completed |
+| ELAPSED TIME    | ########## | Completed |
 | Console Operator play |##########| Completed |
 | 5 questions in quiz | ########## | Completed |
 | Percentage SUMMARY | ########## | Completed |
-| Batch play | ##### | In progress |
+| Batch play | ########## | Completed |
 | PSEUDO-RANDOM ORDER OF QUESTIONS | # | In Progress |     
 ## Run the Project
 * First we need to compile it using default JCL for Enterprise COBOL
@@ -72,9 +72,8 @@ Project is created with:
 * Edit 'OPERQUIZ.JCL' and change it for our need
 * Options available to SET the proper MODE
 ```jcl
-//*             PLEASE CHOOSE ONLY ONE PARAMETER
+//*            PLEASE CHOOSE ONLY ONE PARAMETER:
 //* OPERATOR        FOR CONSOLE OPERATOR INTERACTION
-//* (BELOW NOT IMPLEMENTED YET)
 //* BATCH           BATCH TO PRINT QUESTIONS AND ABCD ANSWERS PROPOSAL
 //* C,ABCDA         TO PRINT CORRECT ANSWERS SUMMARY
 //*   -----  , WHERE ABCDA IS USER ANSWER FOR 5 QUESTIONS
@@ -100,7 +99,6 @@ Project is created with:
 > From TSO: 
 > SUBMIT 'USERID.OPERQUIZ.JCL'
 ## TODO
-* (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
-* VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
+* VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS
 ## License
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)

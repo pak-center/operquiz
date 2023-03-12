@@ -27,7 +27,6 @@
       *          VER-2 IMPL. START/STOP, ELAPSED TIME
       *
       *    TODO
-      *          (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
       *          VER-3 IMPL. PSEUDO-RANDOM ORDER OF QUESTIONS DISPL
       *
       ******************************************************************
@@ -61,8 +60,8 @@
       * LOCAL-STORAGE SECTION.
        LINKAGE SECTION.
        01 PARM-BUFFER.
-           05 PARM-LENGTH                   PIC S9(4) COMP.
-           05 PARM-DATA                     PIC X(256).
+           05 PARM-LENGTH                   PIC S9(4) COMP. 
+           05 PARM-DATA                     PIC X(256). 
            05 LK-WORD REDEFINES PARM-DATA   PIC X. 
       ******************************************************************
        PROCEDURE DIVISION USING PARM-BUFFER. 
@@ -72,16 +71,17 @@
            IF PARM-LENGTH > 0 
               PERFORM PROC-READ-PARAM 
            ELSE
-              DISPLAY 'WARNING: JCL PARM IS EMPTY'
-              MOVE 1 TO RETURN-CODE
+              DISPLAY 'WARNING: JCL PARM IS EMPTY' 
+              MOVE 1 TO RETURN-CODE 
            END-IF
 
-           PERFORM PROC-ELAPSED-TIME.
+           PERFORM PROC-ELAPSED-TIME. 
       D    DISPLAY 'DEBUG: RC=', RETURN-CODE  
            STOP RUN.
       ******************************************************************
        PROC-READ-PARAM. 
-           MOVE FUNCTION UPPER-CASE(LK-WORD) TO LK-WORD 
+      *     MOVE FUNCTION UPPER-CASE(LK-WORD) TO LK-WORD 
+           MOVE FUNCTION UPPER-CASE(PARM-DATA) TO PARM-DATA 
            EVALUATE LK-WORD 
               WHEN 'O'
                  PERFORM PROC-OPER
@@ -102,16 +102,18 @@
            EXIT.
        PROC-BATCH-Q.
            DISPLAY 'MSGINFO: FEATURE NOT IMPLEMENTED YET'
-      D    DISPLAY 'PRINT ALL QUESTIONS AND ABCD ANSERS'
-           CALL 'ORQMOD01'
-
+      D    DISPLAY 'PRINT ALL QUESTIONS AND ABCD ANSwERS'
+           CALL 'ORQMOD01' USING WS-HLINE 
+           CALL 'ORQMOD02' USING WS-HLINE, PARM-BUFFER *>parm not used 
            MOVE 0 TO RETURN-CODE
            EXIT.
        PROC-BATCH-C.
        *> ARG CHECK FOR C,ABCDA
       D    DISPLAY 'READ ANSWERS FROM PARM=(C,*) , WHERE * IS A-D',
       D    'E.G. (C,ABCDA) FOR 5 QUESTIONS'   
-      D    DISPLAY 'PRINT SUMMARY'  
+           CALL 'ORQMOD01' USING WS-HLINE 
+      D    DISPLAY 'DEBUG: PARM-BUFFER= ', PARM-BUFFER 
+           CALL 'ORQMOD02' USING WS-HLINE, PARM-BUFFER  
            EXIT. 
        PROC-ELAPSED-TIME. 
            MOVE FUNCTION CURRENT-DATE TO WS-DATE-DATA(2)  

@@ -6,7 +6,6 @@
       *
       *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
       *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ
-      *          VERSION:    1
       *
       *    WARNING
       *          CODE WAS NOT COMPILED AND RUN
@@ -29,7 +28,7 @@
        PROCEDURE DIVISION USING WS-HLINE.
            DISPLAY WS-HLINE
            DISPLAY WS-HLINE(1:1), 
-           'OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME VER-1'
+           'OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME VER-2'
            , WS-HLINE(1:1)
            DISPLAY WS-HLINE(1:1), 
            'RULES: 1 QUESTION AND 4 ANSWERS, CHOOSE A,B,C OR D'
