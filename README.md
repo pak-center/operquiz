@@ -8,8 +8,8 @@
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Features](#features)
-* [TOO](#todo)
 * [Run the Project](#run-the-project)
+* [TOO](#todo)
 * [License](#license)
 ## General info
 OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
@@ -66,9 +66,6 @@ Project is created with:
 | Percentage SUMMARY | ########## | Completed |
 | Batch play | ##### | In progress |
 | PSEUDO-RANDOM ORDER OF QUESTIONS | # | In Progress |     
-## TODO
-* (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
-* VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
 ## Run the Project
 * First we need to compile it using default JCL for Enterprise COBOL
 * Then we check compile results and correct warnings or errors if exists or just send them here to the author (to fix the code)
@@ -87,6 +84,23 @@ Project is created with:
 //**        SET USERP1=C,-----
 //STEP1 EXEC PGM=OPERQUIZ,PARM='&USERP1'
 ```
+> Default setting is an operator mode and the rest of available options is commented:
+```jcl
+//          SET USERP1=OPERATOR
+```
+> For batch mode PRINT QUESTIONS we need to comment and uncoment JCL code as below:
+```jcl
+//**      SET USERP1=OPERATOR
+//        SET USERP1=BATCH
+```
+> For batch mode CHECK USER ANSWERS AND PRINT SUMMARY we need to input 5 letters from range A to D to JCL code in place of '-----':
+```jcl
+//        SET USERP1=C,AABBC
+```
+> From TSO: 
 > SUBMIT 'USERID.OPERQUIZ.JCL'
+## TODO
+* (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
+* VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
 ## License
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
