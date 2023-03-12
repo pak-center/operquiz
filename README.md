@@ -55,15 +55,15 @@ Project is created with:
 ## Installation
 * Available z/OS COBOL compiler PTF
 ## Features
-| Feature  | Status |
-| ---      | ---       |
-| START/STOP  TIME | Completed       |
-| ELAPSED TIME    | Completed        |
-| Console Operator play | Completed |
-| 5 questions in quiz | Completed |
-| Percentage SUMMARY | Completed |
-| Batch play | In progress |
-| PSEUDO-RANDOM ORDER OF QUESTIONS | In Progress |     
+| Feature  | % Progress | Status |
+| ---      | ---       | --- |
+| START/STOP  TIME | ########## | Completed       |
+| ELAPSED TIME    | ########## | Completed        |
+| Console Operator play |##########| Completed |
+| 5 questions in quiz | ########## | Completed |
+| Percentage SUMMARY | ########## | Completed |
+| Batch play | ##### | In progress |
+| PSEUDO-RANDOM ORDER OF QUESTIONS | # | In Progress |     
 ## TODO
 * (BATCH MODE IS NOT FULLY IMPLEMENTED YET!)
 * VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS DISPLAY
