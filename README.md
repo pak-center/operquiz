@@ -65,7 +65,8 @@ Project is created with:
 | 5 questions in quiz | ########## | Completed |
 | Percentage SUMMARY | ########## | Completed |
 | Batch play | ########## | Completed |
-| PSEUDO-RANDOM ORDER OF QUESTIONS | # | In Progress |     
+| PSEUDO-RANDOM ORDER OF QUESTIONS | # | In Progress | 
+| Beautify code | # | In Progress |
 ## Run the Project
 * First we need to compile it using default JCL for Enterprise COBOL
 * Then we check compile results and correct warnings or errors if exists or just send them here to the author (to fix the code)
