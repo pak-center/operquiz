@@ -17,9 +17,9 @@
       *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS
       *          MAIN PGM          OPERQUIZ.CBL   INIT
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
-      *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
+      *                            ORQMOD02.CBL   QUIZ PART
       *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-      *                            CPBQAC02       V2 OF Q&A REC FORMAT
+      *                            CPBQAC02       VER2 OF Q&A
       *
       ******************************************************************
        DATA DIVISION.

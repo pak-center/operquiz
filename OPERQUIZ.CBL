@@ -35,9 +35,9 @@
       *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARMS
       *          MAIN PGM          OPERQUIZ.CBL   INIT
       *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT FOR CONS
-      *                            ORQMOD02.CBL   CONSOLE PART OF QUIZ
+      *                            ORQMOD02.CBL   QUIZ PART
       *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-      *                            CPBQAC02       V2 OF Q&A REC FORMAT
+      *                            CPBQAC02       VER2 OF Q&A 
       *
       ******************************************************************
        DATA DIVISION.
@@ -45,7 +45,8 @@
        01 WS-OPER-VIEW.
            05 WS-HLINE    PIC X(80) VALUES ALL '*'.
       ******************************************************************
-       01 WS-DATE-DATA OCCURS 2 TIMES INDEXED BY INDX-T. 
+       01 WS-DATES.
+        03 WS-DATE-DATA OCCURS 2 TIMES INDEXED BY INDX-T. 
                           *> 1 AT START, 2 AT STOP
         05  WS-DATE.
          10  WS-Y                           PIC 9(04).
