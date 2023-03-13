@@ -78,23 +78,23 @@ Project is created with:
 //* C,ABCDA         TO PRINT CORRECT ANSWERS SUMMARY
 //*   -----  , WHERE ABCDA IS USER ANSWER FOR 5 QUESTIONS
 //*
-//          SET USERP1=OPERATOR
-//**        SET USERP1=BATCH
-//**        SET USERP1=C,-----
+//          SET USERP1='OPERATOR'
+//**        SET USERP1='BATCH'
+//**        SET USERP1='C,-----'
 //STEP1 EXEC PGM=OPERQUIZ,PARM='&USERP1'
 ```
 > Default setting is an operator mode and the rest of available options is commented:
 ```jcl
-//          SET USERP1=OPERATOR
+//          SET USERP1='OPERATOR'
 ```
 > For batch mode PRINT QUESTIONS we need to comment and uncoment JCL code as below:
 ```jcl
-//**      SET USERP1=OPERATOR
-//        SET USERP1=BATCH
+//**      SET USERP1='OPERATOR'
+//        SET USERP1='BATCH'
 ```
 > For batch mode CHECK USER ANSWERS AND PRINT SUMMARY we need to input 5 letters from range A to D to JCL code in place of '-----':
 ```jcl
-//        SET USERP1=C,AABBC
+//        SET USERP1='C,AABBC'
 ```
 > From TSO: 
 > SUBMIT 'USERID.OPERQUIZ.JCL'
