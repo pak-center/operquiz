@@ -1,6 +1,9 @@
 # operquiz
 ![GitHub top language](https://img.shields.io/github/languages/top/pak-center/operquiz?style=plastic)
-![Lines of code](https://img.shields.io/tokei/lines/github/pak-center/operquiz?label=total%20lines%20of%20code&style=plastic)
+[![Scc Count Badge](https://sloc.xyz/github/pak-center/operquiz/)](https://github.com/pak-center/operquiz/)
+[![Scc Count Badge](https://sloc.xyz/github/pak-center/operquiz/?category=code)](https://github.com/pak-center/operquiz/)
+[![Scc Count Badge](https://sloc.xyz/github/pak-center/operquiz/?category=comments)](https://github.com/pak-center/operquiz/)
+[![Scc Count Badge](https://sloc.xyz/github/pak-center/operquiz/?category=blanks)](https://github.com/pak-center/operquiz/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pak-center/operquiz?style=plastic)
 ![GitHub](https://img.shields.io/github/license/pak-center/operquiz?style=plastic)
 ## Table of contents
@@ -103,3 +106,4 @@ Project is created with:
 * VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS
 ## License
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+![Lines of code](https://img.shields.io/tokei/lines/github/pak-center/operquiz?label=total%20lines%20of%20code&style=plastic)
