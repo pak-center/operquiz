@@ -13,10 +13,14 @@
 //* C,ABCDA         TO PRINT CORRECT ANSWERS SUMMARY
 //*   -----  , WHERE ABCDA IS USER ANSWER FOR 5 QUESTIONS
 //*
+//* *******************************************************************
 //          SET USERP1='OPERATOR'
 //**        SET USERP1='BATCH'
 //**        SET USERP1='C,-----'
+//* -------------------------------------------------------------------
 //STEP1 EXEC PGM=OPERQUIZ,PARM='&USERP1'
+//*STEPLIB   DD DSN= ,DISP=SHR
+//* -------------------------------------------------------------------
 //* BELOW DEFAULT SETTINGS
 //SYSPRINT DD SYSOUT=*
 //SYSOUT DD SYSOUT=*
