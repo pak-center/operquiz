@@ -24,7 +24,7 @@
       ******************************************************************
        DATA DIVISION.
        LINKAGE SECTION.
-       01 WS-HLINE    PIC X(80).
+       01 WS-HLINE    PIC  X(80).
        PROCEDURE DIVISION USING WS-HLINE.
            DISPLAY WS-HLINE
            DISPLAY WS-HLINE(1:1), 
