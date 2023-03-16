@@ -20,7 +20,7 @@
 
 ## General info
 
-OPERATOR CONSOLE QUIZ ABOUT MAINFRAME (WRITTEN IN COBOL)
+OPERATOR CONSOLE AND BATCH QUIZ GAME ABOUT MAINFRAME (WRITTEN IN COBOL)
 
 ```cobol
       ******************************************************************
@@ -81,7 +81,7 @@ Project is created with:
 | 5 questions in quiz | ########## | Completed |
 | Percentage SUMMARY | ########## | Completed |
 | Batch play | ########## | Completed |
-| PSEUDO-RANDOM ORDER OF QUESTIONS | # | In Progress |
+| PSEUDO-RANDOM ORDER OF THE QUESTIONS | # | In Progress |
 | Beautify code | # | In Progress |
 
 ## Run the Project
@@ -128,7 +128,7 @@ Project is created with:
 >
 ## TODO
 
-* VER-3 IMPLEMENT PSEUDO-RANDOM ORDER OF QUESTIONS
+* VER-3 IMPLEMENT FOR CONSOLE MODE SOME PSEUDO-RANDOM ORDER OF THE QUESTIONS
 
 ## License
 
