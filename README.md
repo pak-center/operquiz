@@ -20,7 +20,7 @@
 
 ## General info
 
-OPERATOR CONSOLE AND BATCH QUIZ GAME ABOUT MAINFRAME (WRITTEN IN COBOL)
+Batch and console quiz game about IBM mainframe written in COBOL programming language
 
 ```cobol
       ******************************************************************
