@@ -11,6 +11,7 @@
 ## Table of contents
 
 * [General info](#general-info)
+* [Flowchart: How to play quiz game](#flowchart-how-to-play-quiz-game)
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Features](#features)
@@ -58,6 +59,20 @@ Batch and console quiz game about IBM mainframe written in COBOL programming lan
       *                            CPBQAC02       V2 OF Q&A REC FORMAT
       *
       ******************************************************************
+```
+
+## Flowchart: How to play quiz game
+
+```mermaid
+flowchart TD
+    A[Set JCL PARM to play] -->C{Choose<br/> mode}
+    C -->|Interactive| D(Operator Console)
+    D -->|'CONSOLE'| F(DISPLAY QUESTION)
+    F -->G(ACCEPT ANSWER)
+    G-->F
+    C -->|Batch| E(SPOOL)
+    E-->|'BATCH'| I(PRINTS<br/> ALL QUESTIONS <br/>AND<br/> ANSWERS PROPOSAL)
+    E-->|'C,ABCDA'| H(PRINTS <br/> PERCENTAGE SUMMARY <br/>OF<br/> CORRECT NASWERS)
 ```
 
 ## Technologies
