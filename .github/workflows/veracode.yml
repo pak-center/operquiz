@@ -4,7 +4,7 @@
 # documentation.
 
 # This workflow will initiate a Veracode Static Analysis Pipeline scan, return a results.json and convert to SARIF for upload as a code scanning alert
-LOCAL_PATH="./"
+
 name: Veracode Static Analysis Pipeline Scan
 
 on:
