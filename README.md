@@ -97,7 +97,7 @@ Project is created with:
 | Percentage SUMMARY | ########## | Completed |
 | Batch play | ########## | Completed |
 | PSEUDO-RANDOM ORDER OF THE QUESTIONS | # | In Progress |
-| Beautify code | # | In Progress |
+| Beautify code | ### | In Progress |
 
 ## Run the Project
 
