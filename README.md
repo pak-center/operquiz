@@ -143,7 +143,7 @@ Project is created with:
 >
 ## TODO
 
-* Branch in V3.0.0 will implement some PSEUDO-RANDOM order of the questions for console mode
+- [ ] Branch in V3.0.0 will implement some PSEUDO-RANDOM order of the questions for console mode
 
 ## License
 
