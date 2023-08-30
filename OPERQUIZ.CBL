@@ -9,8 +9,7 @@
       *          VERSION:    2                                          00090003
       *                                                                 00100003
       *    WARNING                                                      00110003
-      *          CODE WAS NOT COMPILED AND RUN                          00120003
-      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT        00130003
+      *          CODE WAS COMPILED AND RUN                              00120003
       *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION    00140003
       *                                                                 00150003
       *    PURPOSE                                                      00160003
