@@ -8,8 +8,7 @@
       *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ                     00080001
       *                                                                 00090001
       *    WARNING                                                      00100001
-      *          CODE WAS NOT COMPILED AND RUN                          00110001
-      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT        00120001
+      *          CODE WAS COMPILED AND RUN                              00110001
       *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION    00130001
       ******************************************************************00140001
       *                                                                 00150001
