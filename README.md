@@ -33,8 +33,7 @@ Batch and console quiz game about IBM mainframe written in COBOL programming lan
       *          VERSION:    2
       *
       *    WARNING
-      *          CODE WAS NOT COMPILED AND RUN
-      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT
+      *          CODE WAS COMPILED AND RUN
       *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
       *
       *    PURPOSE
