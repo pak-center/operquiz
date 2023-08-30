@@ -1,8 +1,7 @@
 //OPRQUIZ1 JOB OPERQUIZ,CLASS=A,MSGCLASS=Y,REGION=0M,NOTIFY=&SYSUID     00010000
 //* ******************************************************************* 00020000
 //*             JCL TO RUN OPERQUIZ COBOL OBJECT MEMBER               * 00030000
-//*             THIS JCL CODE WAS NOT SYNTAX CHECKED OR SUBMITTED     * 00040000
-//*             DO THIS BY YOURSELF BEFORE SUBMITTING                 * 00050000
+//*             THIS JCL CODE WAS SYNTAX CHECKED AND SUBMITTED        * 00040000
 //*             COPYRIGHT:  GNU GPLV2 LICENSE 2023                    * 00060000
 //*             AUTHOR:     PRZEMYSLAW ADAM KUPISZ                    * 00070000
 //*             VERSION:    2                                         * 00080000
