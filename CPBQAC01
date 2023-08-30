@@ -1,51 +1,51 @@
-      ******************************************************************
-      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
-      ******************************************************************
-      *
-      *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
-      *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ
-      *
-      *    WARNING
-      *          CODE WAS NOT COMPILED AND RUN
-      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT
-      *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
-      ******************************************************************
-      *
-      *    PROJECT CONTAINS:
-      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS
-      *          MAIN PGM          OPERQUIZ.CBL   INIT
-      *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT
-      *                            ORQMOD02.CBL   QUIZ PART
-      *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-      *                            CPBQAC02       VER2 OF Q&A
-      *
-      ******************************************************************
-           05 LS-Q.
-            10 LS-Q1 PIC X(50) VALUE 
-            'WHAT PU Z/OS CHECKS TO RUN?'.
-            10 LS-Q2 PIC X(50) VALUE 
-            'JES VERSION FOR PARALLEL SYSPLEX IS?'.
-            10 LS-Q3 PIC X(50) VALUE 
-            'Z/VM CAN NOT IPL:'.
-            10 LS-Q4 PIC X(50) VALUE 
-            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.
-            10 LS-Q5 PIC X(50) VALUE 
-            'WHAT IS BEST FOR SEQUENTIAL ACCESS?'.
-           05 LS-A.
-            10 LS-A01 PIC X(40) VALUE 
-            'A) CP     B) IFL   C) ZIP   D) ZAAP'.
-            10 LS-A02 PIC X(40) VALUE 
-            'A) 1      B) 2     C) 3     D) 4'.
-            10 LS-A03 PIC X(40) VALUE 
-            'A) CP     B) CMS   C) Z/VM  D) Z/OS'.
-            10 LS-A04 PIC X(40) VALUE 
-            'A) EDIT   B) ISPF  C) USS   D) XEDIT'.
-            10 LS-A05 PIC X(40) VALUE 
-            'A) KSDS   B) LDS   C) RRDS  D) PDS/E'.
-           05 LS-C.
-            10 LS-C01 PIC X VALUE 'A'.
-            10 LS-C02 PIC X VALUE 'C'.
-            10 LS-C03 PIC X VALUE 'A'.
-            10 LS-C04 PIC X VALUE 'D'.
-            10 LS-C05 PIC X VALUE 'B'.
-         
+      ******************************************************************00001001
+      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME               00002001
+      ******************************************************************00003001
+      *                                                                 00004001
+      *          COPYRIGHT:  GNU GPLV2 LICENSE 2023                     00005001
+      *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ                     00006001
+      *                                                                 00007001
+      *    WARNING                                                      00008001
+      *          CODE WAS NOT COMPILED AND RUN                          00009001
+      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT        00009101
+      *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION    00009201
+      ******************************************************************00009301
+      *                                                                 00009401
+      *    PROJECT CONTAINS:                                            00009501
+      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS       00009601
+      *          MAIN PGM          OPERQUIZ.CBL   INIT                  00009701
+      *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT          00009801
+      *                            ORQMOD02.CBL   QUIZ PART             00009901
+      *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS 00010001
+      *                            CPBQAC02       VER2 OF Q&A           00011001
+      *                                                                 00012001
+      ******************************************************************00013001
+           05 LS-Q.                                                     00014001
+            10 LS-Q1 PIC X(50) VALUE                                    00015001
+            'WHAT PU Z/OS CHECKS TO RUN?'.                              00016001
+            10 LS-Q2 PIC X(50) VALUE                                    00017001
+            'JES VERSION FOR PARALLEL SYSPLEX IS?'.                     00018001
+            10 LS-Q3 PIC X(50) VALUE                                    00019001
+            'Z/VM CAN NOT IPL:'.                                        00019101
+            10 LS-Q4 PIC X(50) VALUE                                    00019201
+            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.                00019301
+            10 LS-Q5 PIC X(50) VALUE                                    00019401
+            'WHAT IS BEST FOR SEQUENTIAL ACCESS?'.                      00019501
+           05 LS-A.                                                     00019601
+            10 LS-A01 PIC X(40) VALUE                                   00019701
+            'A) CP     B) IFL   C) ZIP   D) ZAAP'.                      00019801
+            10 LS-A02 PIC X(40) VALUE                                   00019901
+            'A) 1      B) 2     C) 3     D) 4'.                         00020001
+            10 LS-A03 PIC X(40) VALUE                                   00021001
+            'A) CP     B) CMS   C) Z/VM  D) Z/OS'.                      00022001
+            10 LS-A04 PIC X(40) VALUE                                   00023001
+            'A) EDIT   B) ISPF  C) USS   D) XEDIT'.                     00024001
+            10 LS-A05 PIC X(40) VALUE                                   00025001
+            'A) KSDS   B) LDS   C) RRDS  D) PDS/E'.                     00026001
+           05 LS-C.                                                     00027001
+            10 LS-C01 PIC X VALUE 'A'.                                  00028001
+            10 LS-C02 PIC X VALUE 'C'.                                  00029001
+            10 LS-C03 PIC X VALUE 'A'.                                  00029101
+            10 LS-C04 PIC X VALUE 'D'.                                  00029201
+            10 LS-C05 PIC X VALUE 'B'.                                  00029301
+                                                                        00029401
