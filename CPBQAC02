@@ -1,53 +1,54 @@
-      ******************************************************************
-      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME
-      ******************************************************************
-      *
-      *          COPYRIGHT:  GNU GPLV2 LICENSE 2023
-      *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ
-      *
-      *    WARNING
-      *          CODE WAS NOT COMPILED AND RUN
-      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT
-      *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION
-      ******************************************************************
-      *
-      *    PROJECT CONTAINS:
-      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS
-      *          MAIN PGM          OPERQUIZ.CBL   INIT
-      *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT
-      *                            ORQMOD02.CBL   QUIZ PART
-      *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS
-      *				     CPBQAC02	  VER2 OF Q&A 
-      *
-      ******************************************************************
-        04 WS-RECORD-O2.
-            05 LS-Q1 PIC X(50) VALUE
-            'WHAT PU Z/OS CHECKS TO RUN?'.
-	    05 LS-A01 PIC X(40) VALUE
-            'A) CP     B) IFL   C) ZIP   D) ZAAP'.
-	    05 LS-C01 PIC X VALUE 'A'.
-      *
-            05 LS-Q2 PIC X(50) VALUE
-            'JES VERSION FOR PARALLEL SYSPLEX IS?'.
-            05 LS-A02 PIC X(40) VALUE
-            'A) 1      B) 2     C) 3     D) 4'.
-	    05 LS-C02 PIC X VALUE 'C'.
-      *			
-	    05 LS-Q3 PIC X(50) VALUE
-            'Z/VM CAN NOT IPL:'.
-            05 LS-A03 PIC X(40) VALUE
-            'A) CP     B) CMS   C) Z/VM  D) Z/OS'.
-	    05 LS-C03 PIC X VALUE 'A'.
-      *			
-	    05 LS-Q4 PIC X(50) VALUE 
-            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.
-            05 LS-A04 PIC X(40) VALUE 
-            'A) EDIT   B) ISPF  C) USS   D) XEDIT'.
-            05 LS-C04 PIC X VALUE 'D'.
-      *			
-            05 LS-Q5 PIC X(50) VALUE 
-            'WHAT IS BEST FOR SEQUENTIAL ACCESS?'.
-            05 LS-A05 PIC X(40) VALUE 
-            'A) KSDS   B) LDS   C) RRDS  D) PDS/E'.
-            05 LS-C05 PIC X VALUE 'B'.
-      *
+      ******************************************************************00010002
+      *    OPERATOR CONSOLE & SCREEN QUIZ ABOUT MAINFRAME               00020002
+      ******************************************************************00030002
+      *                                                                 00040002
+      *          COPYRIGHT:  GNU GPLV2 LICENSE 2023                     00050002
+      *          AUTHOR:     PRZEMYSLAW ADAM KUPISZ                     00060002
+      *                                                                 00070002
+      *    WARNING                                                      00080002
+      *          CODE WAS NOT COMPILED AND RUN                          00090002
+      *          JUST PARSED AND SYSNTAX CHECKED FOR THAT MOMENT        00100002
+      *          WRITTEN IN LEGACY VSCODE WITHOUT GNUCOBOL EXTENSION    00110002
+      ******************************************************************00120002
+      *                                                                 00130002
+      *    PROJECT CONTAINS:                                            00140002
+      *          JCL JOB           OPERQUIZ.JCL   JCL WITH PARAMS       00150002
+      *          MAIN PGM          OPERQUIZ.CBL   INIT                  00160002
+      *          SUB PGM MODULES   ORQMOD01.CBL   WELCOME TEXT          00170002
+      *                            ORQMOD02.CBL   QUIZ PART             00180002
+      *          COBYBOOKS         CPBQAC01       QUESTIONS AND ANSWERS 00190002
+      *                                                                 00200002
+      *                                                                 00210002
+      *                                                                 00220002
+      *                                                                 00230002
+      ******************************************************************00240002
+        04 WS-RECORD-O2.                                                00250002
+            05 LS-Q1 PIC X(50) VALUE                                    00260002
+            'WHAT PU Z/OS CHECKS TO RUN?'.                              00270002
+            05 LS-A01 PIC X(40) VALUE                                   00280002
+            'A) CP     B) IFL   C) ZIP   D) ZAAP'.                      00290002
+            05 LS-C01 PIC X VALUE 'A'.                                  00300002
+      *                                                                 00310002
+            05 LS-Q2 PIC X(50) VALUE                                    00320002
+            'JES VERSION FOR PARALLEL SYSPLEX IS?'.                     00330002
+            05 LS-A02 PIC X(40) VALUE                                   00340002
+            'A) 1      B) 2     C) 3     D) 4'.                         00350002
+            05 LS-C02 PIC X VALUE 'C'.                                  00360002
+      *                                                                 00370002
+            05 LS-Q3 PIC X(50) VALUE                                    00380002
+            'Z/VM CAN NOT IPL:'.                                        00390002
+            05 LS-A03 PIC X(40) VALUE                                   00400002
+            'A) CP     B) CMS   C) Z/VM  D) Z/OS'.                      00410002
+            05 LS-C03 PIC X VALUE 'A'.                                  00420002
+      *                                                                 00430002
+            05 LS-Q4 PIC X(50) VALUE                                    00440002
+            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.                00450002
+            05 LS-A04 PIC X(40) VALUE                                   00460002
+            'A) EDIT   B) ISPF  C) USS   D) XEDIT'.                     00470002
+            05 LS-C04 PIC X VALUE 'D'.                                  00480002
+      *                                                                 00490002
+            05 LS-Q5 PIC X(50) VALUE                                    00491003
+            'IN CMS UNDER Z/VM YOU CAN INSERT TEXT IN?'.                00500002
+            05 LS-A04 PIC X(40) VALUE                                   00510002
+            'A) KSDS   B) LDS   C) RRDS  D) PDS/E'.                     00520002
+            05 LS-C05 PIC X VALUE 'B'.                                  00530002
